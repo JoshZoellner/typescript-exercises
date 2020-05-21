@@ -10,14 +10,13 @@ let kilometersToMars: number = 225000000;
 let kilometersToTheMoon: number = 384400;
 let milesPerKilometer: number = 0.621;
 
-
 // Part 2: Print Days to Mars
 
-
+let milesToMars: number = kilometersToMars * milesPerKilometer;
+let hoursToMars: number = milesToMars / speedMph;
+let daysToMars: number = hoursToMars / 24;
 
 // Code an output statement here (use a template literal):
-
-
 
 // Part 3: Create a Function ("getDaysToLocation")
 
