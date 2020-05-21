@@ -29,8 +29,9 @@ class Spacecraft {
 
 let spaceShuttle = new Spacecraft('Determination', 17500);
 
-console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)} days to get to Mars.`);
-console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} days to get to the Moon.`);
+spaceShuttle.printDaysToLocation(new SpaceLocation('Mars', kilometersToMars));
+spaceShuttle.printDaysToLocation(new SpaceLocation('the Moon', kilometersToTheMoon));
+
 
 // Create an instance of the class here:
 
