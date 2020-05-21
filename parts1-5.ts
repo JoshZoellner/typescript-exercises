@@ -3,11 +3,11 @@
 
 
 // Part 1: Declare (5) Variables With Type
-let spacecraftName: string = 'Determination';
-let speedMph: number = 17500;
+// let spacecraftName: string = 'Determination';
+// let speedMph: number = 17500;
 let kilometersToMars: number = 225000000;
 let kilometersToTheMoon: number = 384400;
-let milesPerKilometer: number = 0.621;
+// let milesPerKilometer: number = 0.621;
 
 
 // Part 2: Print Days to Mars
@@ -36,8 +36,13 @@ console.log(`${spacecraftName} would take ${getDaysToLocation(kilometersToTheMoo
 
 // Part 4: Create a Spacecraft Class
 
-
-
+let Spacecraft = {
+    constructor(name: string, speedMph: number, milesPerKilometer: number = 0.621){
+        this.name: name;
+        this.speedMph = speedMph;
+        this.milesPerKilometer: milesPerKilometer;
+    }
+}
 
 // Create an instance of the class here:
 
