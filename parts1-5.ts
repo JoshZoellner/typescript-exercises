@@ -1,5 +1,6 @@
 // URL for the instructions: 
 // https://education.launchcode.org/intro-to-professional-web-dev/chapters/typescript/exercises.html 
+import { SpaceLocation } from './SpaceLocation';
 
 let kilometersToMars: number = 225000000;
 let kilometersToTheMoon: number = 384400;
@@ -21,6 +22,9 @@ class Spacecraft {
         let daysToLocation: number = hoursToLocation / 24;
         return daysToLocation;
     }
+    printDaysToLocation(location: SpaceLocation) {
+        console.log(`${this.name} would take ${this.getDaysToLocation(location.kilometersAway)} days to get to ${location.name}.`);
+     }
 }
 
 let spaceShuttle = new Spacecraft('Determination', 17500);
