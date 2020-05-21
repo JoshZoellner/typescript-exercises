@@ -18,6 +18,8 @@ let daysToMars: number = hoursToMars / 24;
 
 // Code an output statement here (use a template literal):
 
+console.log(`${spacecraftName} would take ${daysToMars} days to get to Mars.`);
+
 // Part 3: Create a Function ("getDaysToLocation")
 
 
