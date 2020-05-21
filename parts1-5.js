@@ -8,11 +8,8 @@ var kilometersToTheMoon = 384400;
 var milesPerKilometer = 0.621;
 // Part 2: Print Days to Mars
 var milesToMars = kilometersToMars * milesPerKilometer;
-console.log(milesToMars);
-// Declare and assign these variables.
-//     Remember: variable declarations in TypeScript include the type!
-//     hoursToMars is a number with the value of milesToMars / speedMph.
-//     daysToMars is a number with the value of hoursToMars / 24.
+var hoursToMars = milesToMars / speedMph;
+var daysToMars = hoursToMars / 24;
 // Code an output statement here (use a template literal):
 // Part 3: Create a Function ("getDaysToLocation")
 // Move your output statement from part 2 here. Update the template literal to call
